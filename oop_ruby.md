@@ -35,26 +35,26 @@ We do this through classes . . .<br>
 **Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class**<br>
 <br>
 card.rb
-```rb
-class Card
-    attr_reader :suit, :point_value, :string_value
+```ruby
+    class Card
+        attr_reader :suit, :point_value, :string_value
 
-    # This is a constructor function in ruby
-    def initialize(suit, val)
-        @suit = suit
-        @point_value = val
-        case val
-        when 11
-            @string_value = "Jack"
-        when 12
-            @string_value = "Queen"
-        when 13
-            @string_value = "King"
-        else
-            @string_value = val.to_s()
+        # This is a constructor function in ruby
+        def initialize(suit, val)
+            @suit = suit
+            @point_value = val
+            case val
+            when 11
+                @string_value = "Jack"
+            when 12
+                @string_value = "Queen"
+            when 13
+                @string_value = "King"
+            else
+                @string_value = val.to_s()
+            end
         end
-    end
 
-    # Write methods to implement behaviour to the class
-end
+        # Write methods to implement behaviour to the class
+    end
 ```
