@@ -1,6 +1,6 @@
 # An Intro to Object Oriented Programming (Ruby)
 
-<img src="" alt="Ruby" width="500px">
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/ruby.png" alt="Ruby" width="500px">
 
 ### What is OOP?
 
