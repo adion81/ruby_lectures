@@ -29,6 +29,7 @@ Object Oriented Programming(OOP) is a programming paradigm that organizes data i
 
 ### Classes
 We can define objects creating blueprints of them that specify what attributes they have and their behaviours.<br>
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/blueprint.png" alt="Blue Print" width="200px">
 <br>
 We do this through classes . . .<br>
 <br>
@@ -142,7 +143,9 @@ Inheritance is one of the most implemented pillars of OOP.
 uno_card.rb
 
 ```ruby
-class FiveCrownsCard
+class FiveCrownsCard < Card
+
+    # We still need to call the constructor method because we want the child class to have a color attribute.
     def initialize(suit,val, color)
         super(suit,val)
         @color = color
@@ -150,7 +153,7 @@ class FiveCrownsCard
 
     # We can make a child version of the card info method here.
     def card_info
-    
+
         # We print out the color of the UnoCard
         print "Color: #{@color} || "
 
