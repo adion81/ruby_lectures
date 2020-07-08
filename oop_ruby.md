@@ -32,12 +32,13 @@ We can define objects creating blueprints of them that specify what attributes t
 <hr>
 We do this through classes . . .<br>
 <br>
-**Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class**<br>
+*Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class*<br>
 <br>
 card.rb
 
 ```ruby
     class Card
+        # sets our instance variables into getters
         attr_reader :suit, :point_value, :string_value
 
         # This is a constructor function in ruby
@@ -51,13 +52,36 @@ card.rb
                 @string_value = "Queen"
             when 13
                 @string_value = "King"
+            when 1
+                @string_value = "Ace"
             else
                 @string_value = val.to_s()
             end
         end
 
         # Write methods to implement behaviour to the class
+        def card_info
+            puts "#{string_value} of #{suit}"
+        end
     end
 ```
 
-Above is how we would write a class or blueprint for the `card` object.
+Above is how we would write a class or blueprint for the `card` object.<br>
+<br>
+Now we can create an instance of the card class
+
+program.rb
+
+```ruby
+require "./models/card.rb"
+
+# this is how we create an instance of an object
+card  = Card.new("Spades", 1)
+
+```
+
+ ### Instance Varibles
+
+ As mentioned above, we can give attributes to our classes.<br>
+ These attribues are things that an object can have, i.e. A dog can have a name, breed, and a color.<br>
+ With Ruby we add attributes to a class with `Instance Variables` and they can be defined similarly to regular local variables except they have an `@` in front of them.
