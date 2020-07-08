@@ -83,5 +83,32 @@ card  = Card.new("Spades", 1)
  ### Instance Varibles
 
  As mentioned above, we can give attributes to our classes.<br>
+ <br>
  These attribues are things that an object can have, i.e. A dog can have a name, breed, and a color.<br>
+ <br>
  With Ruby we add attributes to a class with `Instance Variables` and they can be defined similarly to regular local variables except they have an `@` in front of them.
+
+### Getters and Setters
+Maybe you've heard of them before, but we use them to protect the data in our classes.<br>
+<br>
+More specifically we use them to grant access to read or overwrite them from outside the class, like on the instance of an object.
+
+```ruby
+class Card
+    # allows you to read the instance variables from outside the class
+    attr_reader :suit, :point_value, :string_value
+
+    # allows you to write(assign) the instance variables from outside the class
+    attr_writer :suit, :point_value, :string_value
+
+    #allows you to read and write(assign) the instance variables from outside the class
+    attr_accessor :suit, :point_value, :string_value
+end
+```
+
+### Methods
+
+Methods allow us to give actions to our objects.<br>
+
+
+### Inheritance
