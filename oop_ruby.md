@@ -35,6 +35,9 @@ We do this through classes . . .<br>
 <br>
 *Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class*<br>
 <br>
+
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/ace.png" alt="Ace of Spades" width="200px">
+
 card.rb
 
 ```ruby
@@ -138,7 +141,8 @@ Inheritance is one of the most implemented pillars of OOP.
     <p>Inheritance allows us to pass down attributes and methods of a class down to child classes.  Just like a parent will pass down genes and behaviours to their children.</p>
 </details>
 
-*We can use the card class to create a child or subclass version of it.  A more specific version of the card*
+*We can use the card class to create a child or subclass version of it.  A more specific version of the card*<br>
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/five_crowns.png" alt="Five Crowns" width="200px">
 
 uno_card.rb
 
