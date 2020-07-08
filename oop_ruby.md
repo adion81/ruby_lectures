@@ -142,7 +142,7 @@ Inheritance is one of the most implemented pillars of OOP.
 </details>
 
 *We can use the card class to create a child or subclass version of it.  A more specific version of the card*<br>
-<img src="https://github.com/adion81/ruby_lectures/blob/master/img/five_crowns.png" alt="Five Crowns" width="200px">
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/five_crowns.jpg" alt="Five Crowns" width="200px">
 
 uno_card.rb
 
