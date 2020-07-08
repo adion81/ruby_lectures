@@ -91,7 +91,9 @@ card  = Card.new("Spades", 1)
 ### Getters and Setters
 Maybe you've heard of them before, but we use them to protect the data in our classes.<br>
 <br>
-More specifically we use them to grant access to read or overwrite them from outside the class, like on the instance of an object.
+More specifically we use them to grant access to read or overwrite them from outside the class, like on the instance of an object.<br>
+<br>
+card.rb
 
 ```ruby
 class Card
@@ -109,6 +111,20 @@ end
 ### Methods
 
 Methods allow us to give actions to our objects.<br>
+<br>
+We define methods in the class the same way we would define one normally<br>
+<br>
+
+card.rb
+
+```ruby
+class Card
+    def show_card
+        puts "The #{@string_value} of #{@suit} || Point Value: #{@point_value}"
+    end
+end
+```
 
 
 ### Inheritance
+
