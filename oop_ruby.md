@@ -11,7 +11,6 @@
         <li>Methods</li>
         <li>Instance Variables</li>
         <li>Inheritance</li>
-        
     </ol>
 </details>
 
