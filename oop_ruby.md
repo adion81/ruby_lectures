@@ -2,6 +2,19 @@
 
 <img src="https://github.com/adion81/ruby_lectures/blob/master/img/ruby.png" alt="Ruby" width="350px">
 
+<details>
+    <summary>What we will cover?</summary>
+    <ol>
+        <li>OOP as a design pattern</li>
+        <li>Class Construction</li>
+        <li>Getters and Setters</li>
+        <li>Methods</li>
+        <li>Instance Variables</li>
+        <li>Inheritance</li>
+        
+    </ol>
+</details>
+
 ### What is OOP?
 
 Object Oriented Programming(OOP) is a programming paradigm that organizes data in objects.  These objects can have attributes and methods to define what they are and how they behave.
@@ -142,9 +155,9 @@ Inheritance is one of the most implemented pillars of OOP.
 </details>
 
 *We can use the card class to create a child or subclass version of it.  A more specific version of the card*<br>
-<img src="https://github.com/adion81/ruby_lectures/blob/master/img/five_crowns.jpg" alt="Five Crowns" width="200px">
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/five_crowns.jpg" alt="Five Crowns" width="300px">
 
-uno_card.rb
+five_crowns_card.rb
 
 ```ruby
 class FiveCrownsCard < Card
