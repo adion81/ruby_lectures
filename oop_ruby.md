@@ -1,6 +1,6 @@
 # An Intro to Object Oriented Programming (Ruby)
 
-<img src="https://github.com/adion81/ruby_lectures/blob/master/img/ruby.png" alt="Ruby" width="500px">
+<img src="https://github.com/adion81/ruby_lectures/blob/master/img/ruby.png" alt="Ruby" width="350px">
 
 ### What is OOP?
 
@@ -24,3 +24,12 @@ Object Oriented Programming(OOP) is a programming paradigm that organizes data i
         <li>Inheritance</li>
     </ul>
 </details>
+
+## Creating objects in OOP
+
+### Classes
+We can define objects creating blueprints of them that specify what attributes they have and their behaviours.<br>
+<hr>
+We do this through classes . . .
+
+Let's say we want to create a card game.  We will need to first create a deck of cards.
