@@ -30,6 +30,31 @@ Object Oriented Programming(OOP) is a programming paradigm that organizes data i
 ### Classes
 We can define objects creating blueprints of them that specify what attributes they have and their behaviours.<br>
 <hr>
-We do this through classes . . .
+We do this through classes . . .<br>
+<br>
+**Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class**<br>
+<br>
+card.rb
+```ruby
+class Card
+    attr_reader :suit, :point_value, :string_value
 
-Let's say we want to create a card game.  We will need to first create a deck of cards.
+    # This is a constructor function in ruby
+    def initialize(suit, val)
+        @suit = suit
+        @point_value = val
+        case val
+        when 11
+            @string_value = "Jack"
+        when 12
+            @string_value = "Queen"
+        when 13
+            @string_value = "King"
+        else
+            @string_value = val.to_s()
+        end
+    end
+
+    # Write methods to implement behaviour to the class
+end
+```
