@@ -35,6 +35,7 @@ We do this through classes . . .<br>
 **Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class**<br>
 <br>
 card.rb
+
 ```ruby
     class Card
         attr_reader :suit, :point_value, :string_value
@@ -58,3 +59,5 @@ card.rb
         # Write methods to implement behaviour to the class
     end
 ```
+
+Above is how we would write a class or blueprint for the `card` object.
