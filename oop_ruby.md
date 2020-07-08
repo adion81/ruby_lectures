@@ -25,11 +25,11 @@ Object Oriented Programming(OOP) is a programming paradigm that organizes data i
     </ul>
 </details>
 
-## Creating objects in OOP
+## Creating Objects in OOP
 
 ### Classes
 We can define objects creating blueprints of them that specify what attributes they have and their behaviours.<br>
-<hr>
+<br>
 We do this through classes . . .<br>
 <br>
 *Let's say we want to create a card game.  We will need to first create a deck of cards, and more important, a card class*<br>
@@ -87,6 +87,7 @@ card  = Card.new("Spades", 1)
  These attribues are things that an object can have, i.e. A dog can have a name, breed, and a color.<br>
  <br>
  With Ruby we add attributes to a class with `Instance Variables` and they can be defined similarly to regular local variables except they have an `@` in front of them.
+<hr>
 
 ### Getters and Setters
 Maybe you've heard of them before, but we use them to protect the data in our classes.<br>
@@ -107,6 +108,7 @@ class Card
     attr_accessor :suit, :point_value, :string_value
 end
 ```
+<hr>
 
 ### Methods
 
@@ -124,7 +126,37 @@ class Card
     end
 end
 ```
-
+<hr>
 
 ### Inheritance
 
+Inheritance is one of the most implemented pillars of OOP.
+
+<details>
+    <summary>What is the purpose of Inheritance?</summary>
+    <p>Inheritance allows us to pass down attributes and methods of a class down to child classes.  Just like a parent will pass down genes and behaviours to their children.</p>
+</details>
+
+*We can use the card class to create a child or subclass version of it.  A more specific version of the card*
+
+uno_card.rb
+
+```ruby
+class FiveCrownsCard
+    def initialize(suit,val, color)
+        super(suit,val)
+        @color = color
+    end
+
+    # We can make a child version of the card info method here.
+    def card_info
+    
+        # We print out the color of the UnoCard
+        print "Color: #{@color} || "
+
+        # Then we call 'super' to invoke the parent method witht the same name!
+        super
+    end
+
+end
+```
